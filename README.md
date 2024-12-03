@@ -2,7 +2,7 @@
 
 This repository contains tools, artifacts, and models used for smart grid security research at the HiPRC Research Laboratory, IIT Kharagpur.
 
-## Learning-based Attack Synthesis For Safety Falsification of Smart Grid
+## 1. Learning-based Attack Synthesis For Safety Falsification of Smart Grid
 
 The tool is designed to find attack vectors for smart grid models that remain undiscovered by the detection units present in the grid. The vectors tamper the sensor and actuator data of Smart Grid. These attack vectors target specific components of the grid causing abnormal behavior like brown-outs, without getting discovered by the anomaly detectors present in the grid. We use a methodology that synthesizes attack vectors using a learning-based probabilistic engine (Reinforcement Learning (RL)) and a stochastic optimization-based formal engine (S-TaLiRo). As a first phase, an RL-based attacker agent learns to inject the most effective input load-altering attack (LAA) sequences to push the system to its transient states for an elongated period as quickly as possible without raising any alarm. The probabilistic LAA sequences thus recovered are automatically augmented in the system model. This is given as input to a well-known simulation-based falsification engine S-TaLiRo that synthesizes false data injection attack (FDIA) sequences intending to falsify the set points of the generation unit. These additional FDIA perturbations thus uncovered, are formally guaranteed to send the generator units out of synchrony with the rest of the power grid exploiting the transient characteristics induced by the RL agent while maintaining stealth.
 
@@ -26,6 +26,7 @@ The tool is designed to find attack vectors for smart grid models that remain un
 
 
 ### Demonstration of the GUI of our tool:
+Please refer to the folder LearningBasedAttackSynthesis for performing the below steps.
 
 #### **Step 1**:
 The user uploads his/her power grid simulink model (in .mdl format) (eg. IEEE5bus.mdl, IEEE9bus.mdl, IEEE14bus.mdl, IEEE39bus.mdl) to the tool by pressing the Select Model button. The file explorer button pops up from where the user can select his/her power grid simulink model.<br />
