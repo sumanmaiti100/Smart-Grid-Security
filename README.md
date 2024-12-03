@@ -196,7 +196,16 @@ connectivity of large loads like Heating Ventilation, and Air Conditioning (HVAC
   <em>Figure: Adaptive Protection System Methodology</em>
 </p>
 
+### Prerequisites:
 
+* Platform: 32/64 bit Windows Operating System.
+* External Tools: Matlab R2022b or later versions.
+* Other Requirements: Matlab Reinforcement Learning Toolbox.
+
+### Simulation Guide
+Please access the folder named AdaptiveProtectionSystemforSmartGrid
+
+* This folder contains a simulink model of standard IEEE-14 bus, embedded with protection systems and also subfolders containing different models of high-enrgy loads in Simulink (.slx) files. The DRL agents are deployed using (.mat) files for both attacker agent and mitigator agent. To view the attack scenarios and their mitigation by our RL agent, load the .mat files into the MATLAB workspace, open the corresponding Simulink (.slx) files, and simulate the models to observe the attack scenarios and the results of the mitigation strategies.
 
 
 
