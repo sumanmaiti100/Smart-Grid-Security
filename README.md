@@ -95,6 +95,10 @@ A sample output plot for IEEE 9 Bus case is provided above.
 ### Demo Video
 [https://youtu.be/V6PoH3omt38](https://www.youtube.com/watch?v=eIeCV0w4F08)
 
+## 2. Targeted Attack Synthesis for Smart grid Vulnerability Analysis
+
+This part of the repository contains the grid models used in our CCS paper Targeted Attack Synthesis for Smart grid Vulnerability Analysis (https://dl.acm.org/doi/10.1145/3576915.3623155)
+
 
 
 
