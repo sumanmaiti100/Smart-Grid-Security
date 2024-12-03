@@ -113,7 +113,7 @@ Our framework assumes a stronger grid safety and security model by considering t
 ### Prerequisites:
 
 * Platform: 32/64 bit Windows Operating System.
-* External Tools: Matlab R2021a.
+* External Tools: Matlab R2022b or later versions.
 * Other Requirements: S-taliro tool-box https://sites.google.com/a/asu.edu/s-taliro/s-taliro , Matlab Reinforcement Learning Toolbox.
 
 ### Installation guide:
