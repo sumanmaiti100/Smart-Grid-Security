@@ -181,7 +181,7 @@ Please access the folder named EnhancingSmartGridSecurity
 * Download the YALMIP software and extract it from the ZIP file. Open MATLAB, click on the "Set Path" option, and add the extracted YALMIP folder to the MATLAB directory to ensure it is accessible in the current workspace.
 
 
-### Simulation Guide
+### Simulation Guide:
 Please access the folder named SmartGridProfitExploitation. The folder contains MATLAB code that integrates electricity market data from the Australian energy market, collected on September 17th, 2024, between 12 AM and 12 PM. The data is organized into folders for different regions: New South Wales (NSW), Tasmania (TAS), Queensland (QLD), and South Australia (SA). Each folder contains MATLAB scripts that implement the market manipulation attack to gain profits and their subsequent mitigation strategies. To run the optimization codes provided, ensure you have installed the latest version of the YALMIP solver (link provided above) and are using MATLAB version R2022b or later.
 
 
