@@ -140,6 +140,8 @@ Please access the folder named TargetedAttackVectorSynthesis
 
 In this work, we propose a safe Deep Reinforcement Learning (DRL)-based framework for mitigating attacks on smart grids. The DRL agent effectively neutralizes cyber-physical attacks on grid surfaces by triggering appropriate sequences of existing protection schemes. The safety of the DRL agent is formally verified through a reachability analysis method. Additionally, our framework is designed for deployment on CUDA-enabled GPU systems, which enables faster execution of these protection sequences and their real-time validation. Our framework establishes a new set of protection rules for grid models, successfully thwarting existing cyber-physical attacks. The paper draft related to this work can be found at: https://arxiv.org/abs/2409.15757
 
+![formal agent-1](https://github.com/user-attachments/assets/919267a5-3f10-4931-a4cf-30b29be16b1a)
+
 
 
 
