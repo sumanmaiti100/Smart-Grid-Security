@@ -194,12 +194,6 @@ connectivity of large loads like Heating Ventilation, and Air Conditioning (HVAC
 <em>Figure: Adaptive Protection System Methodology</em>
 </p>
 
-<p align="center">
-  <img src="https://github.com/sumanmaiti100/Attack-Vector-Synthesis-Framework-for-Smart-Grids/assets/b8a9d76d-071b-4f5f-9283-d58675b0b2ea" alt="methodology" width="700">
-  <br>
-  <em>Figure: Work Flow of the Attack Vector Synthesis Framework</em>
-</p>
-
 
 
 
