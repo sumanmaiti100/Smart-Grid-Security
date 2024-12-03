@@ -133,6 +133,21 @@ Please access the folder named TargetedAttackVectorSynthesis
 * Run the matlab slx file in folder IEEE 39 BUS ATTACK MODEL for desired time duration, to observe the effect of attack on the grid operating frequency through the scopes provided in the model.
 * To simulate the attack in presence of protection systems in the grid, load all the mat files in the folder IEEE 39 BUS ATTACK MITIGATION into the matlab workspace and run the slx file in the same folder for the desired time duration.
 
+## 3. Enhancing Smart Grid Security Using Reinforcement Learning and Formal Verification of Agents
+
+ The distributed nature of smart grids, combined with sophisticated sensors, control algorithms, and data collection facilities at Supervisory Control and Data Acquisition (SCADA) centers, makes them vulnerable to strategically crafted cyber-physical attacks. These malicious attacks can manipulate power demands using high-wattage Internet of Things (IoT) botnet devices, such as refrigerators and air conditioners, or introduce false values into transmission line power flow sensor readings. Consequently, grids experience blackouts and high power flow oscillations. Existing grid protection mechanisms, originally designed to tackle natural faults in transmission lines and generator short circuits, are ineffective against such intelligently crafted attacks. This is because grid operators overlook potential scenarios of cyber-physical attacks during their design phase. 
+
+
+In this work, we propose a safe Deep Reinforcement Learning (DRL)-based framework for mitigating attacks on smart grids. The DRL agent effectively neutralizes cyber-physical attacks on grid surfaces by triggering appropriate sequences of existing protection schemes. The safety of the DRL agent is formally verified through a reachability analysis method. Additionally, our framework is designed for deployment on CUDA-enabled GPU systems, which enables faster execution of these protection sequences and their real-time validation. Our framework establishes a new set of protection rules for grid models, successfully thwarting existing cyber-physical attacks. The paper draft related to this work can be found at: https://arxiv.org/abs/2409.15757
+
+
+
+
+
+
+
+
+
 
 
 
