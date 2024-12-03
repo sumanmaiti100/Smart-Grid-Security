@@ -189,7 +189,7 @@ Please access the folder named SmartGridProfitExploitation. The folder contains 
 Smart grids are designed to efficiently handle variable power demands, especially for large loads, by real-time monitoring, distributed generation and distribution of electricity. However, the grid’s distributed nature and the internet
 connectivity of large loads like Heating Ventilation, and Air Conditioning (HVAC), EV charging systems introduce vulnerabilities in the system that cyber-attackers can exploit, potentially leading to grid instability and blackouts. Traditional protection strategies, primarily designed to handle transmission line faults are often inadequate against such threats, emphasising the need for enhanced grid security. In this work, we propose a Deep Reinforcement Learning (DRL)-based protection system that learns to differentiate any stealthy load alterations from normal grid operations and adaptively adjusts activation thresholds of the protection schemes. We train this adaptive protection scheme against an optimal and stealthy load alteration attack model that manipulates the power demands of HVACs at the most unstable grid buses to induce blackouts. We borrow the concepts of game theory to theoretically prove that the adaptive protection system trained in this zero-sum game setting, with certain reward functions can effectively mitigate any stealthy load alteration-based attack. 
 
-![methodology](https://github.com/user-attachments/assets/b8a9d76d-071b-4f5f-9283-d58675b0b2ea,center)
+![methodology](https://github.com/user-attachments/assets/b8a9d76d-071b-4f5f-9283-d58675b0b2ea)
 <p align="center">
 <em>Figure: Adaptive Protection System Methodology</em>
 </p>
