@@ -148,9 +148,9 @@ In this work, we propose a safe Deep Reinforcement Learning (DRL)-based framewor
 
 
 <p align="center">
-  <img src="![formal agent-1](https://github.com/user-attachments/assets/919267a5-3f10-4931-a4cf-30b29be16b1a)">
+  <img src="![formal agent-1](https://github.com/user-attachments/assets/919267a5-3f10-4931-a4cf-30b29be16b1a)" width="500">
   <br>
-  <em>Figure: Work Flow of the Attack Vector Synthesis Framework</em>
+  <em>Figure: Work Flow of the Attack Mitigation Framework</em>
 </p>
 
 
