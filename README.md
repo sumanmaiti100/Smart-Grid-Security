@@ -6,7 +6,11 @@ This repository contains tools, artifacts, and models used for smart grid securi
 
 The tool is designed to find attack vectors for smart grid models that remain undiscovered by the detection units present in the grid. The vectors tamper the sensor and actuator data of Smart Grid. These attack vectors target specific components of the grid causing abnormal behavior like brown-outs, without getting discovered by the anomaly detectors present in the grid. We use a methodology that synthesizes attack vectors using a learning-based probabilistic engine (Reinforcement Learning (RL)) and a stochastic optimization-based formal engine (S-TaLiRo). As a first phase, an RL-based attacker agent learns to inject the most effective input load-altering attack (LAA) sequences to push the system to its transient states for an elongated period as quickly as possible without raising any alarm. The probabilistic LAA sequences thus recovered are automatically augmented in the system model. This is given as input to a well-known simulation-based falsification engine S-TaLiRo that synthesizes false data injection attack (FDIA) sequences intending to falsify the set points of the generation unit. These additional FDIA perturbations thus uncovered, are formally guaranteed to send the generator units out of synchrony with the rest of the power grid exploiting the transient characteristics induced by the RL agent while maintaining stealth.
 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/103938112/213892560-a93829cb-b429-47e9-86c2-8daefbc27ccc.png" width="90%" height="90%"></br>
+<em>Figure: Work Flow of the Attack Vector Synthesis Framework</em>
+</p>
+
 
 ### Prerequisites (for running the tool):
 
@@ -107,7 +111,7 @@ Our framework assumes a stronger grid safety and security model by considering t
 <p align="center">
   <img src="https://github.com/sumanmaiti100/Attack-Vector-Synthesis-Framework-for-Smart-Grids/assets/103938112/ec0c5b80-a2b7-4f68-95c5-0711b691706b" alt="monte_carlo_intro_1" width="700">
   <br>
-  <em>Figure 1: Work Flow of the Attack Vector Synthesis Framework</em>
+  <em>Figure: Work Flow of the Attack Vector Synthesis Framework</em>
 </p>
 
 ### Prerequisites:
