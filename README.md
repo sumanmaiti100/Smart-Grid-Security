@@ -191,7 +191,7 @@ connectivity of large loads like Heating Ventilation, and Air Conditioning (HVAC
 
 
 
-![methodology (1)](https://github.com/user-attachments/files/17995625/methodology.1.pdf)
+![methodology (1)](https://github.com/user-attachments/assets/ab9dec05-a7bc-4c59-ab83-8ff2d1ad2355)
 <p align="center">
 <em>Figure: Adaptive Protection System Methodology</em>
 </p>
