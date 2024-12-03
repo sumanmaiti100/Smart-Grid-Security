@@ -171,6 +171,11 @@ Please access the folder named EnhancingSmartGridSecurity
 * Platform: 32/64 bit Windows Operating System.
 * External Tools: Matlab R2022b or later versions, YALMIP tool: https://yalmip.github.io/ (version R20230622) or later.
 
+
+### Installation Guide:
+* Download the YALMIP software and extract it from the ZIP file. Open MATLAB, click on the "Set Path" option, and add the extracted YALMIP folder to the MATLAB directory to ensure it is accessible in the current workspace.
+
+
 ### Simulation Guide
 Please access the folder named SmartGridProfitExploitation
 
