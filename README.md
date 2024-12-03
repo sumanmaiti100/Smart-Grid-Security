@@ -155,7 +155,7 @@ In this work, we propose a safe Deep Reinforcement Learning (DRL)-based framewor
 
 * Platform: 32/64 bit Windows Operating System.
 * External Tools: Matlab R2022b or later versions.
-* Other Requirements: S-taliro tool-box https://sites.google.com/a/asu.edu/s-taliro/s-taliro , Matlab Reinforcement Learning Toolbox.
+* Other Requirements: Matlab Reinforcement Learning Toolbox.
 
 ### Simulation Guide
 Please access the folder named EnhancingSmartGridSecurity
