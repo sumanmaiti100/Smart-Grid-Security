@@ -117,7 +117,7 @@ Our framework assumes a stronger grid safety and security model by considering t
 * Other Requirements: S-taliro tool-box https://sites.google.com/a/asu.edu/s-taliro/s-taliro , Matlab Reinforcement Learning Toolbox.
 
 ### Installation guide:
-
+Please access the folder named TargetedAttackVectorSynthesis
 * Setup S-taliro toolbox by pasting "setup_staliro.m" command in the Matlab command window.
 * Copy all the .mat files from folder mat_files and simulink models from folder rl_models_simulink in the repository to the path C:\trunk\demos\SystemModelsAndData.
 
