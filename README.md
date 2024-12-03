@@ -162,6 +162,11 @@ Please access the folder named EnhancingSmartGridSecurity
 
 * The folder EnhancingSmartGridSecurity contains several subfolders, each representing different attack scenarios with .mat files and Simulink (.slx) files. To view the attack scenarios and their mitigation by our RL agent, load the .mat files into the MATLAB workspace, open the corresponding Simulink (.slx) files, and simulate the models to observe the attack scenarios and the results of the mitigation strategies.
 
+## 4. Smart Grid Profit Exploitation Through Tie-Line Power Flow Manipulation
+
+ The exponential growth in electricity demand has necessitated transforming legacy power grids into smart grids. Modern smart grids incorporate advanced sensors for real-time grid monitoring and capabilities for forecasting power generation and demand to better manage consumer electricity needs. These advancements ensure reliable grid operation while enabling electric utility organizations, such as generation companies, to participate in the electricity market. Utilities bid on electricity prices based on forecasted demand, fostering competition that helps ensure consumers receive electricity at reasonable prices. However, the distributed nature of smart grids allows adversaries to strategically disrupt the power supply-demand balance, to exploit the electricity market for profit. In this work, we introduce a novel optimization based attack model targeting the electricity market (refer to the figure below) by disrupting the grid's power flow, a critical vulnerability overlooked by grid security researchers. Our attack model maximizes profits in the market by manipulating power flow sensor measurements of specific transmission lines. It maintains the grid's operating frequency within permissible limits, thus evading detection by operators at Load Dispatch Centers (LDCs). We also propose and demonstrate effective countermeasures against this attack in a testbed environment. To our knowledge, this is the first attack that maximizes market profits while maintaining grid parameters within safety limits.
+
+
 
 
 
