@@ -157,6 +157,14 @@ In this work, we propose a safe Deep Reinforcement Learning (DRL)-based framewor
 * External Tools: Matlab R2022b or later versions.
 * Other Requirements: S-taliro tool-box https://sites.google.com/a/asu.edu/s-taliro/s-taliro , Matlab Reinforcement Learning Toolbox.
 
+### Simulation Guide
+Please access the folder named EnhancingSmartGridSecurity
+
+* The folder EnhancingSmartGridSecurity contains several subfolders, each representing different attack scenarios with .mat files and Simulink (.slx) files. To view the attack scenarios and their mitigation by our RL agent, load the .mat files into the MATLAB workspace, open the corresponding Simulink (.slx) files, and simulate the models to observe the attack scenarios and the results of the mitigation strategies.
+
+
+
+
 
 
 
