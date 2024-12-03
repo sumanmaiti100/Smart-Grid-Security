@@ -1,0 +1,148 @@
+clear
+clf;
+cd('..') 
+cd('SystemModelsAndData')
+Ts=5e-5;
+load states_cp_1.mat;
+load residue3.mat;
+load residue2.mat;
+load residue1.mat;
+load only_rl_train.mat;
+load noisestaliro.mat;
+load noisedata_staliro_1sec.mat;
+load newnoise_staliro.mat;
+load agent_trained_not_22.mat;
+
+model = 'bus_14_take_1_backup';
+init_cond = [];
+TimeIntervals=[];
+index=10000;
+robu=[];
+robu1=[];
+robu2=[];
+input_range = [10 1000];
+disp(' ')
+cp_array = 10;
+
+disp(' ')
+disp('The specification:')
+phi = '((<>r1/\<>r2)\/(!<>r3))';
+
+% Define the predicates
+ii = 1;
+preds(ii).str='r1';
+preds(ii).A = [1 0];
+preds(ii).b = 60.5;
+upper_limit = preds(ii).b;
+
+ii = ii+1;
+preds(ii).str='r2';
+preds(ii).A = [-1 0];
+preds(ii).b = -59.5;
+lower_limit = -1*preds(ii).b;
+
+ii = ii+1;
+preds(ii).str='r3';
+preds(ii).A = [0 1];
+prompt = "Threshold ";
+preds(ii).b = input(prompt);
+residue = preds(ii).b;
+
+disp(' ')
+prompt = 'Total Simulation time: ';
+time = input(prompt);
+
+disp(' ')
+disp('S-Taliro options: ')
+
+opt = staliro_options();
+opt.runs = 3;
+n_tests = 3;
+opt.falsification = 0;
+opt.interpolationtype = {'pconst'};
+opt.optimization_solver = 'SA_Taliro';
+opt.optim_params.n_tests = n_tests;
+
+disp(' ')
+disp('Running S-TaLiRo with chosen solver ...')
+tic
+
+results = staliro(model,init_cond,input_range,cp_array,phi,preds,time,opt);
+
+runtime=toc;
+runtime
+
+disp('Displaying the results of the falsification process ...')
+results.run(results.optRobIndex).bestRob
+
+[T1,XT1,YT1,IT1] = SimSimulinkMdl(model,init_cond,input_range,cp_array,results.run(1).bestSample,time,opt);
+
+% Plotting the frequency and residue values against time
+figure;
+subplot(2,1,1);
+plot(T1,YT1(:,1),'g')
+title('Output Frequency over Time')
+xlabel('Time');
+ylabel('Frequency');
+ylim([lower_limit-5 upper_limit+5]);
+
+hold on;
+plot([0 time],[upper_limit upper_limit],'r')
+plot([0 time],[lower_limit lower_limit],'r')
+legend('output frequency','upper limit','lower limit','Location','southoutside','Orientation','horizontal');
+
+subplot(2,1,2);
+plot(T1,YT1(:,2),'g')
+title('Residue over Time')
+xlabel('Time');
+ylabel('Residue');
+ylim([0 residue+5]);
+
+hold on;
+plot([0 time],[residue residue],'r')
+legend('residue','threshold','Location','southoutside','Orientation','horizontal');
+
+% Plot time values when frequency goes above 60.3 Hz and below 59.7 Hz
+ind_above = (find(YT1(:,1) > 60.3)).*Ts;
+ind_below = (find(YT1(:,1) < 59.7)).*Ts;
+
+lower_margin = 59.7;
+upper_margin = 60.3;
+
+robu1 = abs(YT1(:,1) - (upper_margin )); % calculate robu values by subtracting from the midpoint of margins
+robu2 = abs(YT1(:,1) - (lower_margin ));
+robu = vertcat(robu1, robu2);
+
+[sorted_robu, indices] = sort(robu);
+min_indices = indices(1:index); % take top 1000 indices
+
+min_times = min_indices * Ts; % convert indices to times using time interval Ts
+for i=1:index
+    if(min_times(i)>3)
+        min_times(i)=min_times(i)-3;
+    end
+      
+    TimeIntervals(i)=sort(min_times(i));
+end
+
+
+%min_points = YT1(min_indices, :);
+
+% Plot frequency bounds
+%plot([0 time],[upper_limit upper_limit],'r')
+%hold on
+%plot([0 time],[lower_limit lower_limit],'r')
+
+% Plot output frequency
+%plot(T1,YT1(:,1),'g')
+
+% Plot time values when frequency goes above 60.3 Hz and below 59.7 Hz
+%disp(ind_above);
+%disp(ind_below);
+fprintf('The time intervals when the robustness values are minimum are............................\n');
+timers=sort(min_times);
+disp(timers);
+
+
+cd('..')
+cd('Falsification demos')
