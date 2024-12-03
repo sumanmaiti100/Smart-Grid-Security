@@ -151,10 +151,11 @@ In this work, we propose a safe Deep Reinforcement Learning (DRL)-based framewor
 <em>Figure: Work Flow of the Attack Mitigation Framework</em>
 </p>
 
+### Prerequisites:
 
-
-
-
+* Platform: 32/64 bit Windows Operating System.
+* External Tools: Matlab R2022b or later versions.
+* Other Requirements: S-taliro tool-box https://sites.google.com/a/asu.edu/s-taliro/s-taliro , Matlab Reinforcement Learning Toolbox.
 
 
 
