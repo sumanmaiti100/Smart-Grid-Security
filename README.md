@@ -169,7 +169,7 @@ Please access the folder named EnhancingSmartGridSecurity
 ### Prerequisites:
 
 * Platform: 32/64 bit Windows Operating System.
-* External Tools: Matlab R2022b or later versions.
+* External Tools: Matlab R2022b or later versions, YALMIP tool: https://yalmip.github.io/ (version R20230622) or later.
 
 ### Simulation Guide
 Please access the folder named SmartGridProfitExploitation
