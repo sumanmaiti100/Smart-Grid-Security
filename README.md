@@ -108,11 +108,11 @@ Modern smart grids utilize advanced sensors and digital communication to manage 
 
 Our framework assumes a stronger grid safety and security model by considering that 1) the generation side is equipped with anomaly based detectors sensitive to transient dynamics, 2) real time PMU measurements are available for the transmission system and 3) suitable  protection schemes exist at the generation, transmission and load side. With such security assumptions, we propose an  attack framework that simultaneously targets Automatic Generation Controlers and PMUs to maximize the physical impact of attacks on the grid in minimum possible attack duration, while remaining stealthy all the while.
 
-<p align="center">
-  <img src="https://github.com/sumanmaiti100/Attack-Vector-Synthesis-Framework-for-Smart-Grids/assets/103938112/ec0c5b80-a2b7-4f68-95c5-0711b691706b" alt="monte_carlo_intro_1" width="700">
-  <br>
-  <em>Figure: Work Flow of the Attack Vector Synthesis Framework</em>
-</p>
+
+![monte_carlo_intro_1](https://github.com/user-attachments/assets/db822260-0ea5-428b-8d76-7189da7fbab5)
+  <em>Figure: Adaptive Protection System Methodology</em>
+
+
 
 ### Prerequisites:
 
