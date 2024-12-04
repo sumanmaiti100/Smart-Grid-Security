@@ -108,9 +108,12 @@ Modern smart grids utilize advanced sensors and digital communication to manage 
 
 Our framework assumes a stronger grid safety and security model by considering that 1) the generation side is equipped with anomaly based detectors sensitive to transient dynamics, 2) real time PMU measurements are available for the transmission system and 3) suitable  protection schemes exist at the generation, transmission and load side. With such security assumptions, we propose an  attack framework that simultaneously targets Automatic Generation Controlers and PMUs to maximize the physical impact of attacks on the grid in minimum possible attack duration, while remaining stealthy all the while.
 
-
+<p align="center">
 ![monte_carlo_intro_1](https://github.com/user-attachments/assets/db822260-0ea5-428b-8d76-7189da7fbab5)
+</p>
+<p align="center">
   <em>Figure: Adaptive Protection System Methodology</em>
+</p>
 
 
 
