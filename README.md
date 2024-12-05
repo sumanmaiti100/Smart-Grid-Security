@@ -206,9 +206,12 @@ connectivity of large loads like Heating Ventilation, and Air Conditioning (HVAC
 * Other Requirements: Matlab Reinforcement Learning Toolbox.
 
 ### Simulation Guide
-Please access the folder named AdaptiveProtectionSystemforSmartGrid
+* Please access the folder named AdaptiveProtectionSystemforSmartGrid.
+* Attach the loads from the folder IoT_load to the grid and load the model parameters to workspace.
+* Load agents network present as .mat files in DRL_agents to worksapce.
+  
 
-* This folder contains a simulink model of standard IEEE-14 bus, embedded with protection systems and also subfolders containing different models of high-enrgy loads in Simulink (.slx) files. The DRL agents are deployed using (.mat) files for both attacker agent and mitigator agent. To view the attack scenarios and their mitigation by our RL agent, load the .mat files into the MATLAB workspace, open the corresponding Simulink (.slx) files, and simulate the models to observe the attack scenarios and the results of the mitigation strategies.
+This demonstrates a simulink model of standard IEEE-14 bus, embedded with protection systems and also subfolders containing different models of high-enrgy loads in Simulink (.slx) files. The DRL agents are deployed using (.mat) files for both attacker agent and mitigator agent. Simulate the models to observe the attack scenarios and the results of the mitigation strategies.
 
 
 
